@@ -1,0 +1,130 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #efefef;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+*[id$=errors] {
+	color: red;
+	font-style: italic;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+html *::-webkit-scrollbar {
+	border-radius: 0;
+	width: 0;
+}
+
+html *::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(22, 24, 35, 0.06);
+}
+
+html *::-webkit-scrollbar-track {
+	border-radius: 0;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.cover-content {
+	margin-top: 88px;
+	display: flex;
+	justify-content: center;
+}
+
+.cover-form {
+	background-color: #fff;
+	text-align: center;
+	padding: 8px 16px;
+	border-radius: 8px;
+	width: 700px;
+	height: 600px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.cover-form .form-controll {
+	margin-top: 64px;
+}
+
+.notify {
+	color: red;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.notify-success {
+	color: #0a68ff;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.notify-failed {
+	color: red;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.input-register {
+	display: block;
+	margin: 16px auto;
+	padding: 10px 16px;
+	border: none;
+	border-radius: 18px;
+	border: 2px solid #ccc;
+	outline: none;
+	font-size: 18px;
+	width: 60%;
+}
+
+.input-register:focus {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.input-register::placeholder {
+	font-size: 14px;
+}
+
+.btn-login {
+	border: none;
+	border-radius: 8px;
+	padding: 10px;
+	width: 50%;
+	font-size: 20px;
+	color: #fff;
+	background-color: #0a68ff;
+	margin-top: 32px;
+	margin-bottom: 18px;
+}
+
+.btn-login:hover {
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+.btn-register {
+	color: #0a68ff;
+	font-weight: bold;
+}
+
+.btn-register:hover {
+	text-decoration: underline;
+}
+
+.btn-forgot {
+	color: #c92127;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.btn-forgot:hover {
+	text-decoration: underline;
+}

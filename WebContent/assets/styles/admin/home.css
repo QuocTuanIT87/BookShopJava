@@ -1,0 +1,50 @@
+.wrapper {
+	margin-right: 254px;
+}
+
+.title {
+	color: #000;
+	text-align: center;
+	margin-top: 42px;
+}
+
+.container-left {
+	padding: 16px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 8px;
+}
+
+.item {
+	background-color: #1f2a40;
+	color: #4cceac;
+	padding: 16px;
+	display: flex;
+	align-items: center;
+}
+
+.left-item {
+	flex: 1;
+}
+
+.right-item {
+	font-size: 32px;
+}
+
+.icon-title {
+	margin-right: 6px;
+}
+
+.title-item {
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+.detail {
+	margin-top: 16px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 24px;
+	margin-right: 6px;
+	display: inline-block;
+}

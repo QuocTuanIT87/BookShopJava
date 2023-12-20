@@ -1,0 +1,185 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #efefef;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+html *::-webkit-scrollbar {
+	border-radius: 0;
+	width: 0;
+}
+
+html *::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(22, 24, 35, 0.06);
+}
+
+html *::-webkit-scrollbar-track {
+	border-radius: 0;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.notify-success {
+	color: #0a68ff;
+	font-size: 20px;
+	font-style: italic;
+	text-align: center;
+}
+
+.notify-failed {
+	color: red;
+	font-size: 20px;
+	font-style: italic;
+	text-align: center;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.btn-back {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	padding: 8px 16px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.btn-back:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    padding: 8px 18px;
+}
+
+.container {
+	width: 800px;
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 16px;
+	margin-top: 16px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	margin-right: 180px;
+}
+
+.title {
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.field {
+	margin: 16px 0;
+}
+
+.form-label {
+	display: block;
+	margin-bottom: 6px;
+}
+
+.input-field {
+	width: 80%;
+	padding: 10px 8px;
+	outline: none;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	font-size: 18px;
+}
+
+.input-field::placeholder {
+	font-size: 14px;
+}
+
+.input-field:focus {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.input-field-img {
+	opacity: 0;
+}
+
+.book-image {
+	width: 400px;
+}
+
+.cover-btn {
+	text-align: center;
+	margin: 16px 0;
+}
+
+.cover-btn .btn-submit {
+	padding: 8px 16px;
+	color: #fff;
+	background-color: #0a68ff;
+	border: 1px solid #0a68ff;
+	border-radius: 8px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.cover-btn .btn-submit:hover {
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+.form-control {
+	position: relative;
+}
+
+.choose-file {
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	padding: 8px;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	right: -60%;
+}
+
+.label-file-img {
+	padding: 8px;
+	border-radius: 8px;
+	font-size: 18px;
+	background-color: #ccc;
+	font-weight: bold;
+	display: block;
+	width: 80%;
+	margin-top: 2px;
+}
+
+.label-file-img:hover {
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+.form-select {
+	width: 80%;
+	padding: 8px;
+	font-size: 16px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+}
+
+.form-select:focus {
+	outline: none;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

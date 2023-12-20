@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efefef;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icon-manager {
+	margin-right: 10px;
+}
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 0;
+}
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.06);
+}
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.list-book {
+    margin-right: 254px;
+    margin-top: 50px;
+}
+
+.modal {
+    display: none;
+}
+
+.modal.active {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes show {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.inner-modal {
+    background-color: #fff;
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 8px;
+    animation: show 0.4s ease-in-out;
+}
+
+.title-modal {
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+
+.title-list {
+    background-color: gray;
+    padding: 8px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+   right: 254px;
+}
+
+.title-list .btn-add {
+    padding: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title-list .btn-add:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.list-book {
+    color: #000;
+}
+
+.title-list {
+}
+
+.table {
+    display: table;
+    width: 100%;
+    padding: 8px;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.header-table {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.table-cell {
+    display: table-cell;
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
+    vertical-align: middle;
+}
+
+.book-image {
+    width: 100px;
+    object-fit: contain;
+}
+
+.btn-delete {
+    border: none;
+    color: red;
+    border: 2px solid red;
+}
+
+.btn-delete-modal {
+    border: none;
+    color: red;
+    border: 2px solid red;
+}
+
+.btn-edit {
+}
+
+.action {
+}
+
+.btn {
+    padding: 8px;
+    margin-right: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}

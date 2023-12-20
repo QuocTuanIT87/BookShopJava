@@ -1,0 +1,79 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #efefef;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+html *::-webkit-scrollbar {
+	border-radius: 0;
+	width: 0;
+}
+
+html *::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(22, 24, 35, 0.06);
+}
+
+html *::-webkit-scrollbar-track {
+	border-radius: 0;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.cover-content {
+	margin-top: 88px;
+}
+
+.cover-content .inner-content {
+	margin: 0 auto;
+	width: 90%;
+	display: flex;
+}
+
+.sidebar {
+	flex: 1;
+	border-radius: 8px;
+	background-color: #fff;
+	margin-right: 24px;
+	padding: 12px 8px;
+	max-height: 800px;
+	overflow-y: auto;
+}
+
+.sidebar .title-sidebar {
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+
+.item-category {
+	display: flex;
+	align-items: center;
+	border-radius: 8px;
+	padding: 7px 16px;
+}
+
+.item-category:hover {
+	cursor: pointer;
+	background-color: #27272a1f;
+}
+
+.title-cate {
+	font-weight: bold;
+}
+
+.item-category .img-cate {
+	width: 46px;
+	height: 46px;
+	margin-right: 28px;
+	border-radius: 50%;
+	object-fit: cover;
+}

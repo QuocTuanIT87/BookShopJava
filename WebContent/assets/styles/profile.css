@@ -1,0 +1,16 @@
+.wrapper {
+	margin-top: 82px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 90%;
+	display: flex;
+}
+
+.content-sidebar {
+	background-color: #fff;
+	flex: 4;
+	border-radius: 8px;
+	padding: 8px;
+}

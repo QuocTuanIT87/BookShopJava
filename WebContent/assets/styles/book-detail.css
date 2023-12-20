@@ -1,0 +1,490 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #efefef;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+html *::-webkit-scrollbar {
+	border-radius: 0;
+	width: 0;
+}
+
+html *::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(22, 24, 35, 0.06);
+}
+
+html *::-webkit-scrollbar-track {
+	border-radius: 0;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.id-book {
+	display: none;
+}
+
+.wrapper {
+	margin-top: 90px;
+}
+
+.content {
+	width: 1130px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	margin: 0 auto;
+	min-height: 486px;
+	position: relative;
+}
+
+.inner {
+	padding: 16px;
+	display: flex;
+	align-items: center;
+}
+
+.cover-image {
+	width: 400px;
+	height: 400px;
+	text-align: center;
+	margin-right: 24px;
+}
+
+.image-item {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	margin-bottom: 16px;
+	transition: 0.4s ease-in-out;
+}
+
+.image-item:hover {
+	cursor: pointer;
+	transform: scale(1.03);
+}
+
+.btn {
+	padding: 8px 16px;
+	border: 2px solid #c92127;
+	border-radius: 8px;
+	font-weight: bold;
+}
+
+.btn-add-cart {
+	background-color: #fff;
+	color: #c92127;
+	display: inline-block;
+	margin-right: 121px;
+	cursor: pointer;
+}
+
+.btn-buy {
+	color: #fff;
+	background-color: #c92127;
+	padding: 9px 16px;
+	position: absolute;
+	left: 22%;
+	bottom: 12px;
+}
+
+.add-inner {
+	background-color: #fff;
+	border: none;
+	font-weight: bold;
+	color: #c92127;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+.des {
+	flex: 1;
+}
+
+.name-book {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+
+.cover-detail-info {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.publisher {
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 4px;
+}
+
+.title-first {
+	width: 400px;
+}
+
+.author {
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 4px;
+}
+
+.star {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	color: #f6a500;
+}
+
+.cover-price {
+	display: flex;
+	align-items: center;
+}
+
+.price {
+	font-weight: bold;
+	font-size: 32px;
+	margin-right: 14px;
+	color: #c92127;
+}
+
+.old-price {
+	text-decoration: line-through;
+	margin-right: 14px;
+}
+
+.discount {
+	font-weight: bold;
+	color: #fff;
+	background-color: #c92127;
+	padding: 4px;
+	border-radius: 8px;
+}
+
+.quantity {
+	margin-top: 16px;
+}
+
+.remaining {
+	display: inline-block;
+	font-weight: bold;
+}
+
+.cover-quantity {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.input-quantity {
+	padding: 10px 8px;
+	outline: none;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.input-quantity::-webkit-inner-spin-button {
+	opacity: 1;
+	height: 64px;
+	cursor: pointer;
+}
+
+.des-content {
+	width: 1130px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	margin: 32px auto;
+	padding: 8px;
+}
+
+.title-des {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.detail-des {
+	font-size: 16px;
+	text-align: justify;
+	padding: 16px;
+}
+
+.content-comment {
+	width: 1130px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	margin: 32px auto;
+	padding: 8px;
+}
+
+.cover-comment {
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 24px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 12px;
+}
+
+.left-comment {
+	flex: 1;
+	padding-left: 10px;
+}
+
+.user-name {
+	font-weight: bold;
+}
+
+.date-comment {
+	font-size: 14px;
+}
+
+.right-comment {
+	flex: 5;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.star-comment {
+	color: #f6a500;
+}
+
+.detail-comment {
+	margin-top: 10px;
+	font-size: 16px;
+	text-align: justify;
+}
+
+.cover-input {
+	border: 1px solid #e3e3e3;
+	border-radius: 8px;
+	padding: 4px;
+	width: 12%;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.input-quantity {
+	border: none;
+	font-weight: bold;
+	outline: none;
+	text-align: center;
+	width: 36px;
+	font-size: 16px;
+	padding: 2px 0;
+}
+
+.btn-change-quantity {
+	display: inline-block;
+	color: #9fa7ab;
+	cursor: pointer;
+}
+
+.btn-change-quantity:hover {
+	color: #444546;
+}
+
+.input-quantity::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+.cover-btn-review {
+	text-align: center;
+}
+
+.btn-review {
+	border-radius: 8px;
+	border: 2px solid #C92127;
+	color: #C92127;
+	background: #fff;
+	padding: 8px 116px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btn-review:hover {
+	opacity: 0.8;
+}
+
+/* modal review */
+.container-modal {
+	display: none;
+}
+
+.container-modal.active {
+	position: fixed;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+}
+
+.modal {
+	position: relative;
+	width: 800px;
+	background: #fff;
+	padding: 20px 30px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	animation: show 0.4s ease-in-out;
+}
+
+@keyframes show {
+	from { transform:translateY(-60px);
+	opacity: 0;
+}
+
+to {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+}
+.modal .post {
+	display: none;
+}
+
+.modal .text {
+	font-size: 25px;
+	color: #666;
+	font-weight: 500;
+}
+
+.modal .edit {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	font-size: 16px;
+	color: #666;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.modal .edit:hover {
+	text-decoration: underline;
+}
+
+.modal .star-widget  .input-modal {
+	display: none;
+}
+
+.star-widget  .label-modal {
+	font-size: 40px;
+	color: #444;
+	padding: 10px;
+	float: right;
+	transition: all 0.2s ease;
+}
+
+ .input-modal:not(:checked) ~  .label-modal:hover,
+	 .input-modal:not(:checked) 
+	 ~  .label-modal:hover ~  .label-modal
+	{
+	color: #fd4;
+}
+
+ .input-modal:checked ~  .label-modal {
+	color: #fd4;
+}
+
+.input-modal#rate-5:checked ~  .label-modal {
+	color: #fe7;
+	text-shadow: 0 0 4px #4811d3;
+}
+
+.modal .form-review {
+	display: none;
+}
+
+ .input-modal:checked ~ .form-review {
+	display: block;
+}
+
+.form-review header {
+	width: 100%;
+	font-size: 25px;
+	color: #fe7;
+	font-weight: 500;
+	margin: 5px 0 20px 0;
+	text-align: center;
+	transition: all 0.2s ease;
+}
+
+.form-review .textarea {
+	height: 260px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.form-review .textarea textarea {
+	height: 100%;
+	width: 100%;
+	outline: none;
+	color: #000;
+	border: 1px solid #333;
+	padding: 10px;
+	font-size: 17px;
+	resize: none;
+}
+
+.textarea textarea:focus {
+	border-color: #444;
+}
+
+.form-review .btn-modal {
+	height: 45px;
+	width: 100%;
+	margin: 15px 0;
+}
+
+.form-review .btn-modal .btn-post-comment {
+	height: 100%;
+	width: 100%;
+	border: 1px solid #c92127;
+	outline: none;
+	background: #c92127;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 500;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	font-weight: bold;
+}
+
+.form-review .btn-modal .btn-post-comment:hover {
+	background: #1b1b1b;
+}
+
+.star-widget {
+	width: 100%;
+}
+
+.last-star {
+	margin-right: 204px;
+}
+
+.purchased {
+	margin-top: 4px;
+	color: #23C16B;
+}

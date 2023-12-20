@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   		http://www.springframework.org/schema/beans/spring-beans.xsd
+	   		http://www.springframework.org/schema/context
+	   		http://www.springframework.org/schema/context/spring-context.xsd
+	   		http://www.springframework.org/schema/tx 
+			http://www.springframework.org/schema/tx/spring-tx.xsd
+			http://www.springframework.org/schema/mvc 
+			http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<!-- Đổi đường dẫn theo từng máy -->
+	<!--Lâu lâu escip bị ngáo lỗi chỗ uploadFile này, fix lỗi bằng cách đổi 
+		chữ F trong uploadFile thành thường hoặc hoa rồi restart lại server là chạy 
+		được -->
+	<bean id="uploadFile" class="book.bean.UploadFile">
+		<property name="basePath"
+			value="D:\JavaWorkSpace\BookShop\WebContent\assets\images\" />
+	</bean>
+	
+	<bean id="rootFile" class="book.bean.UploadFile">
+		<property name="basePath"
+			value="D:\JavaWorkSpace\BookShop\WebContent\" />
+	</bean>
+
+	<bean id="categoryFile" class="book.bean.UploadFile">
+		<property name="basePath"
+			value="D:\JavaWorkSpace\BookShop\WebContent\assets\images\category" />
+	</bean>
+
+	<bean id="bookFile" class="book.bean.UploadFile">
+		<property name="basePath"
+			value="D:\JavaWorkSpace\BookShop\WebContent\assets\images\book" />
+	</bean>
+
+	<bean id="avatarFile" class="book.bean.UploadFile">
+		<property name="basePath"
+			value="D:\JavaWorkSpace\BookShop\WebContent\assets\images\avatar" />
+	</bean>
+
+	<bean id="AccountDAO" class="book.dao.impl.AccountDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="CategoryDAO" class="book.dao.impl.CategoryDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="PublisherDAO" class="book.dao.impl.PublisherDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="BookDAO" class="book.dao.impl.BookDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="CartDAO" class="book.dao.impl.CartDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="OrderDAO" class="book.dao.impl.OrderDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="DiscountDAO" class="book.dao.impl.DiscountDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="CommentDAO" class="book.dao.impl.CommentDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	
+
+</beans>

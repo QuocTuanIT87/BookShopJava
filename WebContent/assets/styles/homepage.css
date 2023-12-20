@@ -1,0 +1,114 @@
+.cover-content {
+	margin-top: 88px;
+}
+
+.notify-success {
+	color: #0a68ff;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.cover-content .inner-content {
+	margin: 0 auto;
+	width: 90%;
+	display: flex;
+}
+
+.content {
+	flex: 4;
+	border-radius: 8px;
+	background-color: #efefef;
+	max-height: 800px;
+	overflow-y: auto;
+}
+
+.slider-content {
+	margin-bottom: 24px;
+}
+
+
+.book-trend {
+	padding: 8px;
+	background-color: #fff;
+	border-radius: 8px;
+}
+
+.list-book {
+	padding: 8px;
+	background-color: #fff;
+	border-radius: 8px;
+	margin-top: 18px;
+}
+
+.inner-list-book {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 8px;
+}
+
+.inner-list-book .item-book {
+	margin-bottom: 32px;
+	position: relative;
+	padding: 8px;
+	border: 1px solid transparent;
+	transition: 0.2s ease-in-out;
+	max-width: 200px;
+}
+
+.inner-list-book .item-book:hover {
+	cursor: pointer;
+	border: 1px solid #f7941e;
+	border-radius: 4px;
+	transform: scale(1.03);
+}
+
+.title-list-book {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 18px;
+}
+
+.img-book-item {
+	width: 190px;
+	height: 190px;
+}
+
+.book-name {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	line-height: 1.5em;
+	height: 3em; /* height is 2x line-height, so two lines will display */
+}
+
+.price-book {
+	color: #c92127;
+	font-weight: bold;
+	margin: 4px 0;
+}
+
+.old-price {
+	color: #888888;
+	font-size: 14px;
+	text-decoration: line-through;
+}
+
+.stars {
+	color: #f6a500;
+	margin-top: 12px;
+}
+
+.discount {
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	top: 0;
+	right: 0;
+	background-color: #f7941e;
+	border-radius: 50%;
+	color: #fff;
+	font-weight: bold;
+}
